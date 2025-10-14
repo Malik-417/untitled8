@@ -11,8 +11,12 @@ static void main(String[] args) {
 
     for (int payment : inputArray1) {
         sum += payment;
-        if (payment > max) max = payment;
-        if (payment < min) min = payment;
+        if (payment > max) {
+            max = payment;
+        }
+        if (payment < min) {
+            min = payment;
+        }
     }
 
     double average = sum / inputArray1.length;
